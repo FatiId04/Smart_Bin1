@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="182dp"
+        android:layout_height="167dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="120dp"
+        android:src="@drawable/logo" />
+
+
+    <TextView
+
+        android:id="@+id/clean_space"
+        android:layout_width="301dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="71dp"
+        android:gravity="center_vertical"
+        android:text="@string/clean_space"
+        android:textColor="#000905"
+        android:textSize="48sp" />
+
+    <EditText
+        android:id="@+id/input1"
+        android:layout_width="381dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/input"
+        android:hint="@string/ed1"
+        android:textColorHint="#fff"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/input2"
+        android:layout_width="381dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="22dp"
+        android:hint="@string/ed2"
+        android:inputType="textPassword"
+        android:textColorHint="#fff"
+        android:textSize="24sp"
+        android:background="@drawable/input"
+
+        />
+    <Button android:id="@+id/button1"
+        android:layout_width="370dp"
+        android:layout_height="60dp"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:background="@drawable/button1"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="22dp"
+
+        />
+
+    <TextView
+
+        android:id="@+id/forgot"
+        android:layout_width="241dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="179dp"
+        android:gravity="center_vertical"
+        android:paddingBottom="47dp"
+        android:text="@string/forgot"
+        android:textColor="#065143"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:gravity="center_vertical"
+        android:text="@string/dont"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+
+    <TextView
+
+        android:id="@+id/sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="170dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center_vertical"
+        android:padding="0dp"
+        android:text="@string/sign"
+        android:textColor="#065143"
+        android:textSize="25sp" />
+
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+
+    <TextView
+
+        android:id="@+id/update_pass"
+        android:layout_width="370dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="70dp"
+        android:gravity="center_vertical"
+        android:text="@string/update_pass"
+        android:textColor="#000905"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/input9"
+        android:layout_width="381dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/input"
+        android:hint="@string/ed1"
+        android:textColorHint="#fff"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/input10"
+        android:layout_marginLeft="17dp"
+        android:layout_width="381dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="22dp"
+        android:hint="@string/ed7"
+        android:inputType="textPassword"
+        android:textColorHint="#fff"
+        android:textSize="24sp"
+        android:background="@drawable/input"
+
+        />
+    <Button android:id="@+id/button3"
+        android:layout_width="370dp"
+        android:layout_height="60dp"
+        android:text="@string/update"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:background="@drawable/button1"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="22dp"
+
+        />
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:gravity="center_vertical"
+        android:text="@string/change"
+        android:textColor="#000000"
+        android:padding="20dp"
+        android:textSize="23sp" />
+
+    <TextView
+
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="190dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center_vertical"
+        android:padding="0dp"
+        android:text="@string/login"
+        android:textColor="#065143"
+        android:textSize="25sp" />
+
+
+
+
+
+</LinearLayout>

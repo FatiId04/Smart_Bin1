@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">cleanSpace App</string>
+    <string name="Logo" />
+    <string name="clean_space"><b><i>Clean Space</i></b></string>
+    <string name="ed1">  <b>Username </b>   </string>
+    <string name="ed2">  <b>Password</b>   </string>
+    <string name="forgot"><b>forgot password?</b> </string>
+    <string name="dont">Don\'t have an account?</string>
+    <string name="account">you have already an account?</string>
+    <string name="sign"><b>Sign up</b></string>
+    <string name="first"><b>  First Name</b></string>
+    <string name="last"><b>  Last Name</b></string>
+    <string name="next"><b>Next</b></string>
+    <string name="login"><b>Login</b></string>
+    <string name="min" ><b> Minimum 6 characters</b>  </string>
+    <string name="ed4"> <b> Confirm Email</b></string>
+    <string name="ed6"><b> Confirm Password</b></string>
+    <string name="update"><b>Update</b></string>
+    <string name="ed7">  <b> New Password</b>   </string>
+    <string name="update_pass"><b><i>Update your password</i></b></string>
+    <string name="change">Don\'t need to change password? </string>
+</resources>

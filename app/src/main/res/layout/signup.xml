@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/signUp"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:padding="0dp"
+        android:text="@string/sign"
+        android:textColor="#065143"
+        android:textSize="45sp"
+        />
+    <EditText
+        android:id="@+id/input1"
+        android:layout_width="381dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/input"
+        android:hint="@string/first"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        />
+    <EditText
+        android:id="@+id/input2"
+        android:layout_width="381dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/input"
+        android:hint="@string/last"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        />
+
+    <EditText
+        android:id="@+id/input3"
+        android:layout_width="381dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/input"
+        android:hint="@string/ed1"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        />
+
+
+    <EditText
+        android:id="@+id/input4"
+        android:layout_width="381dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/input"
+        android:hint="@string/ed2"
+        android:inputType="textPassword"
+        android:textColor="#fff"
+        android:textSize="24sp" />
+
+    <TextView
+
+        android:id="@+id/forgot"
+        android:layout_width="249dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:gravity="center_vertical"
+        android:paddingBottom="1dp"
+        android:text="@string/min"
+        android:textColor="#065143"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/input5"
+        android:layout_width="381dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/input"
+        android:hint="@string/ed6"
+        android:inputType="textPassword"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button1"
+        android:text="@string/sign"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+
+        />
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:gravity="center_vertical"
+        android:text="@string/account"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:padding="2dp"/>
+
+    <TextView
+
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="190dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center_vertical"
+        android:padding="0dp"
+        android:text="@string/login"
+        android:textColor="#065143"
+        android:textSize="25sp" />
+
+
+</LinearLayout>
