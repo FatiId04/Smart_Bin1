@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".35"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="410dp"
+        android:layout_height="502dp"
+        android:background="@drawable/background"
+        app:layout_constraintBottom_toBottom0f="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndof="parent"
+        app:layout_constraintHeight_percent=".61"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTop0f="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="181dp">
+
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="411dp"
+            android:layout_height="89dp"
+            android:layout_marginBottom="380dp"
+            android:gravity="left|center"
+            android:padding="0dp"
+            android:text="Let us introduce you to our smart bin!"
+            android:textColor="#065143"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="393dp"
+            android:layout_height="200dp"
+            android:layout_marginBottom="150dp"
+            android:gravity="left|center"
+            android:padding="5dp"
+            android:text="Smart Bin est une poubelle intelligente qui utilise la technologie pour améliorer la gestion des déchets, cette machine permet le recyclage d’une
+manière efficace, et qui encourage aussi les gens à jeter les déchets où il faut, à travers une application mobile que l’utilisateur utilise
+pour gagner des points, ses points se transforment en une somme d’argent comme étant un moyen d’encouragement."
+            android:textColor="#065143"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="53dp"
+        android:layout_height="50dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/baseline_arrow_back_24"
+        android:style="@style/Widget.AppCompat.Button.Colored"
+        android:textSize="24sp"
+        android:text=" u"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndof="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_tostartof="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
