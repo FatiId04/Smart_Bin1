@@ -1,4 +1,4 @@
-package com.example.cleanspaceapp;
+package com.example.myapplication;
 
 import android.os.Bundle;
 import android.view.View;
@@ -13,13 +13,6 @@ public class SmartRecyclingAssistant extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.smartrecyclingassistant);
-            tv1=findViewById(R.id.tv1);
-            tv2=findViewById(R.id.tv2);
-            button3=findViewById(R.id.button3);
-
-        button3.setOnClickListener((evt) -> {
-            finish();
-        });
 
     }
 
