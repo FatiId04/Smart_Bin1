@@ -1,230 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProfilePage">
-
-
-    <ImageView
-        android:id="@+id/image1"
-        android:layout_width="422dp"
-        android:layout_height="242dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="-11dp"
-        android:layout_marginTop="-24dp"
-        app:srcCompat="@drawable/home_image" />
+    xmlns:tools="http://schemas.android.com/tools"
+    >
 
     <View
-        android:id="@+id/rectangle_1"
-        android:layout_width="430dp"
-        android:layout_height="56dp"
+        android:id="@+id/image_1"
+        android:layout_width="139dp"
+        android:layout_height="126dp"
         android:layout_alignParentLeft="true"
+        android:layout_marginLeft="308dp"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="183dp"
-        android:background="@drawable/rectangle_1" />
+        android:background="@drawable/logo"
+        />
+    <TextView
+        android:id="@+id/hi_username"
+        android:layout_width="240dp"
+        android:layout_height="44dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/hi_username"
+        android:textSize="36sp"
+        android:textColor="#065143"
+        android:textStyle="bold"
+        android:gravity="center_horizontal|top"
+        />
 
-    <View
-        android:id="@+id/ellipse_1"
-        android:layout_width="136dp"
-        android:layout_height="136dp"
+    <ImageButton
+        android:id="@+id/image_button1"
+        android:layout_width="360dp"
+        android:layout_height="130dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="99dp"
-        android:background="@drawable/ellipse_1" />
-
-    <View
-        android:id="@+id/ellipse_2"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="115dp"
-        android:background="@drawable/ellipse_2" />
-
-    <View
-        android:id="@+id/ellipse_3"
-        android:layout_width="100dp"
-        android:layout_height="45dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="29dp"
-        android:layout_marginTop="177dp"
-        android:background="@drawable/ellipse_3" />
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="104dp"
+        android:background="@drawable/smart_bin1" />
 
     <TextView
-        android:id="@+id/email"
-        android:layout_width="51dp"
-        android:layout_height="21dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_button1"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="59dp"
-        android:layout_marginTop="286dp"
-        android:gravity="top"
-        android:text="Email"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="233dp"
+        android:text="Smart Recycling Assistant"
         android:textColor="@color/black"
-        android:textSize="17sp"
-        android:textStyle="bold" />
+        android:textSize="25sp" />
+
+    <ImageButton
+        android:id="@+id/image_button2"
+        android:layout_width="360dp"
+        android:layout_height="130dp"
+        android:layout_below="@id/image_button1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="273dp"
+        android:background="@drawable/smart_bin2"
+
+        />
 
     <TextView
-        android:id="@+id/email1"
-        android:inputType="textEmailAddress"
-        android:layout_width="51dp"
-        android:layout_height="21dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_button1"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="322dp"
-        android:gravity="top"
-        android:text="Email"
-        android:textColor="#6E000000"
-        android:textSize="17sp"
-        android:textStyle="bold"/>
-
-    <View
-        android:id="@+id/divider"
-        android:layout_width="336dp"
-        android:layout_height="2dp"
-        android:layout_below="@id/email1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="49dp"
-        android:layout_marginTop="364dp"
-        android:background="@drawable/line"
-        android:outlineSpotShadowColor="@color/black" />
-
-    <TextView
-        android:id="@+id/full_name"
-        android:layout_width="97dp"
-        android:layout_height="21dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="59dp"
-        android:layout_marginTop="408dp"
-        android:text="Full name"
+        android:layout_marginLeft="109dp"
+        android:layout_marginTop="409dp"
+        android:text="Locate nearst bin"
         android:textColor="@color/black"
-        android:textSize="17sp"
-        android:textStyle="bold" />
-    <TextView
-        android:id="@+id/full_name1"
-        android:layout_width="110dp"
-        android:inputType="text"
-        android:layout_height="24dp"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="50dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="451dp"
-        android:text="Full name"
-        android:textColor="#6E000000"
-        android:textSize="17sp"
-        android:textStyle="bold"
-        />
+        android:textSize="25sp" />
 
-    <View
-        android:id="@+id/divider1"
-        android:layout_width="336dp"
-        android:layout_height="2dp"
-        android:layout_below="@id/full_name1"
+    <ImageButton
+        android:id="@+id/image_button3"
+        android:layout_width="360dp"
+        android:layout_height="130dp"
+        android:layout_below="@id/image_button2"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="49dp"
-        android:layout_marginTop="492dp"
-        android:background="@drawable/line"
-        android:outlineSpotShadowColor="@color/black" />
-    <TextView
-        android:id="@+id/adresse"
-        android:layout_width="77dp"
-        android:layout_height="21dp"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="59dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="520dp"
-        android:gravity="top"
-        android:text="Adresse"
-        android:textColor="@color/black"
-        android:textSize="17sp"
-        android:textStyle="bold"
-        />
-    <TextView
-        android:id="@+id/adresse1"
-        android:layout_width="77dp"
-        android:layout_height="21dp"
-        android:inputType="textPostalAddress"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="50dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="551dp"
-        android:text="Adresse"
-        android:textColor="#6E000000"
-        android:textSize="17sp"
-        android:textStyle="bold"
-        android:gravity="top"
-        />
-
-    <View
-        android:id="@+id/divider2"
-        android:layout_width="336dp"
-        android:layout_height="2dp"
-        android:layout_below="@id/adresse1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="49dp"
-        android:layout_marginTop="584dp"
-        android:background="@drawable/line"
-        android:outlineSpotShadowColor="@color/black" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/button"
-        android:layout_width="228dp"
-        android:layout_height="57dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="106dp"
-        android:layout_marginTop="605dp"
-        android:text="Change password"
-        android:textStyle="bold"
-        />
-
-    <View
-        android:id="@+id/line_6"
-        android:layout_width="430dp"
-        android:layout_height="1dp"
-        android:layout_below="@id/button"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="-5dp"
-        android:layout_marginTop="668dp"
-        android:background="@drawable/line" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/imageView6"
-        android:layout_width="53dp"
-        android:layout_height="22dp"
-        android:layout_below="@id/button"
-        android:layout_marginLeft="49dp"
-        android:layout_marginTop="31dp"
-        android:width="31dp"
-        android:height="29dp"
-        android:background="?attr/actionModeCloseDrawable" />
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="448dp"
+        android:background="@drawable/smart_bin3" />
 
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_button1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="123dp"
+        android:layout_marginTop="580dp"
+        android:text="How to recycle?"
+        android:textSize="25sp"
+        android:textColor="@color/black" />
+
+    <ImageButton
+        android:id="@+id/score"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_below="@id/image_button2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="623dp"
+        android:background="@drawable/s" />
+
+    <ImageButton
         android:id="@+id/profile"
-        android:layout_width="83dp"
-        android:layout_height="24dp"
-        android:layout_below="@id/imageView6"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_below="@id/image_button2"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="163dp"
-        android:layout_marginTop="683dp"
-        android:gravity="top"
-        android:text="Profile"
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        android:textStyle="bold"/>
+        android:layout_marginLeft="155dp"
+        android:layout_marginTop="621dp"
+        android:background="@drawable/profile" />
+
+    <ImageButton
+        android:id="@+id/sett"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_below="@id/image_button2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="288dp"
+        android:layout_marginTop="623dp"
+        android:background="@drawable/sett" />
+
 
 </RelativeLayout>
