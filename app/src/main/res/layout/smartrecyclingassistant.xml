@@ -1,79 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#FFFFFF">
+    android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageView2"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/img"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight_percent=".35"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0" />
+        android:layout_height="218dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        app:srcCompat="@drawable/img" />
 
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="412dp"
-        android:layout_height="502dp"
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="543dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="188dp"
+        android:layout_marginEnd="1dp"
         android:background="@drawable/background"
-        app:layout_constraintBottom_toBottom0f="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toEndof="parent"
-        app:layout_constraintHeight_percent=".61"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTop0f="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="181dp">
-
+        android:orientation="vertical">
 
         <TextView
-            android:id="@+id/tv1"
-            android:layout_width="411dp"
-            android:layout_height="89dp"
-            android:layout_marginBottom="380dp"
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
             android:gravity="left|center"
-            android:padding="0dp"
-            android:layout_marginLeft="20dp"
-            android:text="Let us introduce you to our smart bin!"
-            android:textColor="@color/black"
-            android:textSize="30dp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
+            android:text="\n Let us introduce you to our smart bin! \n"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#065143"
+            android:textSize="25dp" />
 
         <TextView
-            android:id="@+id/tv2"
-            android:layout_width="393dp"
-            android:layout_height="300dp"
-            android:layout_marginBottom="70dp"
-            android:gravity="left|center"
-            android:padding="5dp"
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="Smart Bin is a smart bin that uses technology to improve waste management, this machine allows the recycling of a
 efficient way, and which also encourages people to dispose of waste where it belongs, through a mobile application that the user uses
-to earn points, his points turn into a sum of money as a means of encouragement."
+to earn points, his points turn into a sum of money as a means of encouragement"
             android:textColor="@color/black"
-            android:layout_marginLeft="20dp"
-            android:textSize="25dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+            android:textSize="19dp"
+            />
+    </LinearLayout>
+</RelativeLayout>
 
