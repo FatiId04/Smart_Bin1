@@ -55,7 +55,7 @@ public class HomeActivity extends AppCompatActivity {
 
                     @Override
                     public void onClick(View view) {
-                        startActivity(new Intent(HomeActivity.this, com.example.cleanspace.ProfilePage.class));
+                        startActivity(new Intent(HomeActivity.this, ProfilePage.class));
                     }
                 });
                 settingBtn.setOnClickListener(new View.OnClickListener() {

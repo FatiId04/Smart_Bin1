@@ -14,9 +14,7 @@ public class SmartRecyclingAssistant extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.smartrecyclingassistant);
-            textView2=findViewById(R.id.textView2);
-            textView3=findViewById(R.id.textView3);
-            imageView2=findViewById(R.id.imageView2);
+
 
        
 
