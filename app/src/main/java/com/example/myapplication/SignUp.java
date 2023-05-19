@@ -30,6 +30,7 @@ public class SignUp extends AppCompatActivity {
         login=findViewById(R.id.login);
 
 
+
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -86,7 +87,10 @@ public class SignUp extends AppCompatActivity {
 
     }
     void openHome(){
-        Intent intent  = new Intent(this, HomeActivity.class);
+        Intent intent = new Intent(this,HomeActivity.class);
+        Bundle b= new Bundle();
+        b.putString("user",username.getText().toString());
+        intent.putExtras(b);
         startActivity(intent);
     }
 }

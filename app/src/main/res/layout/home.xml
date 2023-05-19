@@ -14,20 +14,17 @@
         android:layout_alignParentTop="true"
         android:background="@drawable/logo"
         />
+
     <TextView
         android:id="@+id/hi_username"
-        android:layout_width="240dp"
+        android:layout_width="wrap_content"
         android:layout_height="44dp"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="24dp"
         android:layout_alignParentTop="true"
         android:layout_marginTop="40dp"
-        android:text="@string/hi_username"
-        android:textSize="36sp"
-        android:textColor="#065143"
-        android:textStyle="bold"
         android:gravity="center_horizontal|top"
-        />
+        android:textColor="#065143"
+        android:textSize="36sp"
+        android:textStyle="bold" />
 
     <ImageButton
         android:id="@+id/image_button1"

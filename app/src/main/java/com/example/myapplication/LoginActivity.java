@@ -70,7 +70,10 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
     void openHome(){
-        Intent intent  = new Intent(this, HomeActivity.class);
+        Intent intent = new Intent(this,HomeActivity.class);
+        Bundle b= new Bundle();
+        b.putString("user",username.getText().toString());
+        intent.putExtras(b);
         startActivity(intent);
     }
 }
