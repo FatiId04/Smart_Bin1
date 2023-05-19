@@ -17,5 +17,6 @@ public class ProfilePage extends AppCompatActivity {
         setContentView(R.layout.profile);
 
 
+
     }
 }

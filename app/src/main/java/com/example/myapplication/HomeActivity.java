@@ -21,6 +21,8 @@ public class HomeActivity extends AppCompatActivity {
                 ImageButton scoreBtn = findViewById(R.id.score);
                 ImageButton profileBtn = findViewById(R.id.profile);
                 ImageButton settingBtn = findViewById(R.id.sett);
+                TextView   HI=findViewById(R.id.hi_username);
+
 
                 TextView hi_username=findViewById(R.id.hi_username);
                  Bundle b=getIntent().getExtras();
