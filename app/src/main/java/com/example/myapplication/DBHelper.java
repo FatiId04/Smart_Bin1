@@ -69,5 +69,23 @@ public class DBHelper extends SQLiteOpenHelper {
         else
             return true;
 
-}}
+
+}
+    public String getLastName(String username)   {
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery("Select lastName from users where username = ?", new String[]{username});
+        cursor.moveToNext();
+
+        return cursor.getString(0);
+    }
+    public String getFirstName(String username)   {
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery("Select firstName from users where username = ?", new String[]{username});
+        cursor.moveToNext();
+
+        return cursor.getString(0);
+    }
+}
 
