@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "135706535350",
+    "project_id": "clean-space-database",
+    "storage_bucket": "clean-space-database.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:135706535350:android:6f189bf86133e3f8decd17",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "135706535350-vmlbm4q51o9f8k9no00v01ode8cu22i0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzf5HYSQgA5dYCCIBNYhN9XJJdD3o6hF8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "135706535350-vmlbm4q51o9f8k9no00v01ode8cu22i0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
