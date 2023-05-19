@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -20,6 +21,8 @@ public class HomeActivity extends AppCompatActivity {
                 ImageButton scoreBtn = findViewById(R.id.score);
                 ImageButton profileBtn = findViewById(R.id.profile);
                 ImageButton settingBtn = findViewById(R.id.sett);
+                TextView   HI=findViewById(R.id.hi_username);
+
 
                 assistantBtn.setOnClickListener(new View.OnClickListener() {
 
