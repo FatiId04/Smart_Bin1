@@ -20,4 +20,5 @@
     <string name="update_pass"><b><i>Update your password</i></b></string>
     <string name="change">Don\'t need to change password? </string>
     <string name="hi_username">Hi</string>
+    <string name="todo">TODO</string>
 </resources>
