@@ -16,7 +16,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginLeft="-11dp"
         android:layout_marginTop="-24dp"
-        android:background ="@drawable/home_image" />
+        android:background ="@drawable/signup_image" />
 
     <View
         android:id="@+id/rectangle_1"
