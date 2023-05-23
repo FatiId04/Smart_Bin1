@@ -22,12 +22,11 @@ public class ProfilePage extends AppCompatActivity {
         TextView first=findViewById(R.id.first_name1);
         TextView last=findViewById(R.id.last_name1);
         TextView user=findViewById(R.id.username1);
-        DBHelper DB= new DBHelper(ProfilePage.this);
         Bundle b=getIntent().getExtras();
-        user.setText( b.getString("user"));
-
-        last.setText(DB.getLastName(b.getString("user")));
-        first.setText(DB.getFirstName(b.getString("user")));
+        user.setText( b.getString("user1"));
+        DBHelper DB= new DBHelper(ProfilePage.this);
+        last.setText(DB.getLastName(b.getString("user1")));
+        first.setText(DB.getFirstName(b.getString("user1")));
 
 
     }

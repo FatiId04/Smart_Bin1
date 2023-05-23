@@ -13,22 +13,22 @@ import androidx.appcompat.app.AppCompatActivity;
 public class SignUp extends AppCompatActivity {
 
 
-    EditText firstName,lastName,username,password,confirmPassword;
+    EditText firstName, lastName, username, password, confirmPassword;
     Button signup;
     TextView login;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.signup);
 
-        firstName=findViewById(R.id.input1);
-        lastName=findViewById(R.id.input2);
-        username=findViewById(R.id.input3);
-        password=findViewById(R.id.input4);
-        confirmPassword=findViewById(R.id.input5);
-        signup=findViewById(R.id.button1);
-        login=findViewById(R.id.login);
-
+        firstName = findViewById(R.id.input1);
+        lastName = findViewById(R.id.input2);
+        username = findViewById(R.id.input3);
+        password = findViewById(R.id.input4);
+        confirmPassword = findViewById(R.id.input5);
+        signup = findViewById(R.id.button1);
+        login = findViewById(R.id.login);
 
 
         signup.setOnClickListener(new View.OnClickListener() {
@@ -42,29 +42,28 @@ public class SignUp extends AppCompatActivity {
                 DBHelper DB = new DBHelper(SignUp.this);
 
 
-                if(user.equals("")||pass.equals("")||repass.equals(""))
+                if (user.equals("") || pass.equals("") || repass.equals(""))
                     Toast.makeText(SignUp.this, "Please enter all the fields", Toast.LENGTH_SHORT).show();
-                else{
-                    if(pass.length()>5){
-                        if(pass.equals(repass)){
+                else {
+                    if (pass.length() > 5) {
+                        if (pass.equals(repass)) {
                             Boolean checkuser = DB.checkusername(user);
-                            if(checkuser==false){
-                                Boolean insert = DB.insertData(first,last,user, pass);
-                                if(insert==true){
+                            if (checkuser == false) {
+                                Boolean insert = DB.insertData(first, last, user, pass);
+                                if (insert == true) {
                                     Toast.makeText(SignUp.this, "Registered successfully", Toast.LENGTH_SHORT).show();
                                     openHome();
-                                }else{
+
+                                } else {
                                     Toast.makeText(SignUp.this, "Registration failed", Toast.LENGTH_SHORT).show();
                                 }
-                            }
-                            else{
+                            } else {
                                 Toast.makeText(SignUp.this, "User already exists! please sign in", Toast.LENGTH_SHORT).show();
                             }
-                        }else{
+                        } else {
                             Toast.makeText(SignUp.this, "Passwords not matching", Toast.LENGTH_SHORT).show();
                         }
-                    }
-                    else{
+                    } else {
                         Toast.makeText(SignUp.this, "Password should have at least 6 characters", Toast.LENGTH_SHORT).show();
                     }
                 }
@@ -79,20 +78,20 @@ public class SignUp extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent  = new Intent(getApplicationContext(), LoginActivity.class);
+                Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
                 startActivity(intent);
 
             }
         });
 
     }
-    void openHome(){
-        Intent intent = new Intent(this,HomeActivity.class);
-        Intent intent1 = new Intent(this,ProfilePage.class);
-        Bundle b= new Bundle();
-        b.putString("user",username.getText().toString());
+
+    void openHome() {
+        Intent intent = new Intent(this, HomeActivity.class);
+        Bundle b = new Bundle();
+        b.putString("user", username.getText().toString());
         intent.putExtras(b);
-        intent1.putExtras(b);
         startActivity(intent);
+
     }
 }

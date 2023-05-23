@@ -8,6 +8,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.text.BreakIterator;
+
 public class HomeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,12 +23,10 @@ public class HomeActivity extends AppCompatActivity {
                 ImageButton scoreBtn = findViewById(R.id.score);
                 ImageButton profileBtn = findViewById(R.id.profile);
                 ImageButton settingBtn = findViewById(R.id.sett);
-                TextView   HI=findViewById(R.id.hi_username);
-
-
                 TextView hi_username=findViewById(R.id.hi_username);
                  Bundle b=getIntent().getExtras();
-                 hi_username.setText("Hi \t"+ b.getString("user"));
+                 String username =b.getString("user");
+                 hi_username.setText("Hi \t"+ username);
 
                 assistantBtn.setOnClickListener(new View.OnClickListener() {
 
@@ -62,7 +62,7 @@ public class HomeActivity extends AppCompatActivity {
 
                     @Override
                     public void onClick(View view) {
-                        startActivity(new Intent(HomeActivity.this, ProfilePage.class));
+                        openProfile();
                     }
                 });
                 settingBtn.setOnClickListener(new View.OnClickListener() {
@@ -72,6 +72,17 @@ public class HomeActivity extends AppCompatActivity {
                         startActivity(new Intent(HomeActivity.this, SettingPage.class));
                     }
                 });
+            }
+            public void openProfile(){
+                TextView hi_username=findViewById(R.id.hi_username);
+                Bundle b=getIntent().getExtras();
+                String username =b.getString("user");
+                hi_username.setText("Hi \t"+ username);
+                Intent intent1 = new Intent(this,ProfilePage.class);
+                Bundle b1= new Bundle();
+                b1.putString("user1",username.toString());
+                intent1.putExtras(b1);
+                startActivity(intent1);
             }
         }
 
