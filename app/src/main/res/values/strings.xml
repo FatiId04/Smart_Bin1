@@ -21,4 +21,6 @@
     <string name="change">Don\'t need to change password? </string>
     <string name="hi_username">Hi</string>
     <string name="todo">TODO</string>
+    <string name="change_pass">Change password</string>
+    <string name="password">  Current password</string>
 </resources>

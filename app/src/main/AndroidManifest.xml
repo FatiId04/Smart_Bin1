@@ -25,6 +25,8 @@
         <activity android:name=".updatePassword"></activity>
         <activity android:name=".SmartRecyclingAssistant"></activity>
        <activity android:name=".ProfilePage"></activity>
+        <activity android:name=".changePassword"></activity>
+        <activity android:name=".LearnPage"></activity>
 
 
     </application>
