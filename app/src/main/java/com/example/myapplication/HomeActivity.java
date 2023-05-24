@@ -55,7 +55,7 @@ public class HomeActivity extends AppCompatActivity {
 
                     @Override
                     public void onClick(View view) {
-                        startActivity(new Intent(HomeActivity.this, ScorePage.class));
+                        startActivity(new Intent(HomeActivity.this, Score.class));
                     }
                 });
                 profileBtn.setOnClickListener(new View.OnClickListener() {
