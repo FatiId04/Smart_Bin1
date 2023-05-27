@@ -11,14 +11,14 @@ import androidx.annotation.NonNull;
 
 public class DBHelper extends SQLiteOpenHelper {
 
-    public static final String DBNAME = "Login.db";
+    public static final String DBNAME = "Smart.db";
     public DBHelper(Context context) {
-        super(context, "Login.db", null, 1);
+        super(context, DBNAME, null, 1);
     }
 
     @Override
     public void onCreate(SQLiteDatabase MyDB) {
-        MyDB.execSQL("create Table users(firstName TEXT,lastName TEXT,username TEXT primary key, password TEXT)");
+        MyDB.execSQL("create Table users(firstName TEXT,lastName TEXT,username TEXT primary key, password TEXT,score INT)");
     }
 
     @Override
@@ -33,6 +33,7 @@ public class DBHelper extends SQLiteOpenHelper {
         contentValues.put("LastName", lastName);
         contentValues.put("username", username);
         contentValues.put("password", password);
+        contentValues.put("score", 0);
         long result = MyDB.insert("users", null, contentValues);
         if(result==-1) return false;
         else
