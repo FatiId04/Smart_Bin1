@@ -103,7 +103,7 @@
         android:textStyle="bold" />
     <TextView
         android:id="@+id/last_name1"
-        android:layout_width="110dp"
+        android:layout_width="400dp"
         android:inputType="text"
         android:layout_height="48dp"
         android:layout_alignParentLeft="true"

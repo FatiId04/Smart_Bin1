@@ -58,7 +58,7 @@ public class SignUp extends AppCompatActivity {
                                     Toast.makeText(SignUp.this, "Registration failed", Toast.LENGTH_SHORT).show();
                                 }
                             } else {
-                                Toast.makeText(SignUp.this, "User already exists! please sign in", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(SignUp.this, "User already exists! please login", Toast.LENGTH_SHORT).show();
                             }
                         } else {
                             Toast.makeText(SignUp.this, "Passwords not matching", Toast.LENGTH_SHORT).show();

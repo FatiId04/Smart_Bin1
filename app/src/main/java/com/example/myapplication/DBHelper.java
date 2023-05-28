@@ -11,7 +11,7 @@ import androidx.annotation.NonNull;
 
 public class DBHelper extends SQLiteOpenHelper {
 
-    public static final String DBNAME = "Smart.db";
+    public static final String DBNAME = "SmartBin1.db";
     public DBHelper(Context context) {
         super(context, DBNAME, null, 1);
     }
